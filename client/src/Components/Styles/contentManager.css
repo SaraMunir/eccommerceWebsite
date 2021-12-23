@@ -1,0 +1,149 @@
+.sideMenu{
+    width: 10%;
+    background: #9c9c8788;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    margin: 0;
+    margin-right: auto;
+}
+.sideMenu li {
+    padding: 10px;
+    text-align: center;
+}
+.dashboard{
+    padding: 50px;
+    width: 90%;
+    position: relative;
+}
+.dashboard h1 {
+    margin: 0;
+}
+.sideMenuItem{
+}
+.sideMenuActive{
+    background: #313131;
+    color: white;
+}
+.addProductForm{
+    width: 80%;
+    margin: 0 auto;
+}
+.addProductForm label {
+    padding: 10px 0px;
+    font-size: 1.2rem;
+}
+.addProductForm input {
+    border: none;
+    padding: 10px;
+}
+.addProductForm select {
+    border: none;
+    padding: 10px;
+    background: white;
+}
+.addProductForm button {
+    background: #313131;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 ;
+    cursor: pointer;
+}
+.addProductForm .flexCol{
+    margin: 10px 0 ;
+}
+
+.blackBtn{
+    border: none;
+    background: #313131;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modalCntr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #313131d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    width: 80%;
+    margin: 0 auto;
+    background: #b7b7a4;
+    padding: 50px 0;
+    border-radius: 10px;
+    position: relative;
+}
+.closeBtnCntr{
+    cursor: pointer;
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.productList{
+
+}
+.listItem div{
+    /* border: 1px solid goldenrod; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    background: honeydew;
+    border-radius: 8px;
+    margin: 3px auto;
+    padding: 5px 10px;
+}
+.itemNum {
+    width: 5%;
+}
+.itemName{
+    width: 40%;
+}
+.itemCategory, .itemType{
+    width: 20%;
+}
+.itemLink{
+    width: 15%;
+    margin: 0 auto;
+}
+.itemLink .linkBtn {
+    background: #313131d7;
+    border: none;
+    padding: 8px 13px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: o auto;
+}
+.productImg{
+    width: 30%;
+}
+.productDetail{
+    width: 70%;
+    padding: 20px 40px;
+}
+.productName{
+    width: 85%;
+}

@@ -1,0 +1,135 @@
+.productHeader{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productHeader h1 {
+    font-size: 3rem;
+    color: #ffefe3;
+}
+.womensHeader{
+    background: radial-gradient(#ddbea92f, #ddbea97e, #d4a07c) ,url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.mensHeader{
+    background-image: radial-gradient(#ffffff0d, #a5a58d) , url('https://images.unsplash.com/photo-1543322748-33df6d3db806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.card {
+    background: white;
+    padding: 10px;
+}
+.sidebar{
+    /* width: 20%; */
+    height: 80vh;
+    position: sticky;
+    top: 0;
+}
+.productsList{
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.cardSticky {
+}
+.flexGridRow {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+.cardTitle{
+    background: #242323;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.productCard{
+    /* width: 300px; */
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+.productCard img {
+    height: 250px;
+    object-fit: cover;
+}
+.card button {
+    border: none;
+    padding: 15px 20px;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: .3s;
+    display: flex;
+    justify-content: space-between;
+}
+.card button:hover, .card button:focus{
+    background: #b7b7a4;
+    color: white;
+}
+
+.sidebar .menu {
+    position: relative;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+}
+.menuItem{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu:hover, .menu:focus{
+    background: #b7b7a4;
+    color: white;
+}
+.subMenu{
+    position: absolute;
+    background: #242323;
+    color: white;
+    top: 0;
+    left: 100%;
+    width: 0;
+    overflow: auto;
+    transition: .5s;
+}
+.subMenu li button {
+    color: white;
+}
+.sidebar .menu:hover .subMenu, .sidebar .menu:focus  .subMenu{
+    /* width: ; */
+    min-width: 150px;
+}
+.showMenu{
+    min-width: 150px;
+    
+}
+.activeMenu{
+    background: #b7b7a4;
+    color: white;
+}
+
+.productCard button {
+    background: #2c2c2c;
+    padding: 15px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.productCard button:hover, .productCard button:active{
+    background: #4d4d4d;
+    
+    
+}

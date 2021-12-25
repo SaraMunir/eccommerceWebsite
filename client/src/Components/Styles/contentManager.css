@@ -79,9 +79,12 @@
     width: 80%;
     margin: 0 auto;
     background: #b7b7a4;
-    padding: 50px 0;
+    padding: 50px;
     border-radius: 10px;
     position: relative;
+}
+.modalContent{
+    /* padding: ; */
 }
 .closeBtnCntr{
     cursor: pointer;
@@ -110,7 +113,7 @@
 .listItem{
     display: flex;
     justify-content: space-between;
-    background: honeydew;
+    background: rgb(255, 255, 255);
     border-radius: 8px;
     margin: 3px auto;
     padding: 5px 10px;
@@ -146,4 +149,16 @@
 }
 .productName{
     width: 85%;
+}
+.sizeInput {
+    width: 40%;
+    padding: 10px;
+}
+.sizeInputBtn{
+    width: 20%;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+}
+.colorSizes{
+    
 }

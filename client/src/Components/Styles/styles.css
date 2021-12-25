@@ -105,6 +105,15 @@ img {
     display: flex;
     flex-direction: column;
 }
+.col50{
+    width: 50%;
+}
+.col45{
+    width: 45%;
+}
+.flexRowWrap{
+    flex-wrap: wrap;
+}
 .categories{
     /* width: 100%; */
     display: flex;

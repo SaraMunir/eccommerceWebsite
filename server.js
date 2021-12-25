@@ -17,6 +17,21 @@ app.post('/api/newProduct', async function( req,res ){
     const postNewProduct = await orm.postNewProduct( newProductObj );
     res.send(postNewProduct);
 })
+app.post('/api/addImage/:productId', async function( req,res ){
+    const newProductMainImg= req.body;
+    const productId = req.params.productId
+    // console.log('in server: ', newProductMainImg)
+    const addProductMainImg = await orm.addProductMainImg( newProductMainImg, productId );
+    res.send(addProductMainImg);
+})
+app.post('/api/addColors/:productId', async function( req,res ){
+    const newColorObj= req.body;
+    const productId = req.params.productId
+    // console.log('in server: ', newColorObj)
+    const addColorObj = await orm.addColorObj( newColorObj, productId );
+    res.send(addColorObj);
+})
+// `/api/addImage/${productId}`
 app.get('/api/getAllProducts', async(req, res)=>{
     const getAllProducts=await orm.getAllProducts();
     res.json(getAllProducts)
@@ -30,5 +45,6 @@ app.get('/api/getProductDetail/:productId', async(req, res)=>{
 
 app.get('/*', function( req,res ){
     console.log("redirect to index page!");
-    res.sendFile( path.join(__dirname, 'build', 'index.html') );
+    // res.sendFile( path.join(__dirname, 'build', 'index.html') );
+    res.sendFile( path.join(__dirname, 'public', 'index.html') );
 })

@@ -7,19 +7,30 @@ let product = new Schema ({
     nameOfProduct: String,
     price: Number,
     rating: Number,
-    mainImg: String,
+    mainImg: {
+        imageId: String,
+        imageUrl: String,
+    },
     colours: [
         {
-            name: String,
+            nameOfColor: String,
+            swatcheImg: {
+                imagId: String,
+                imageUrl: String,
+            },
             sizes: [
                 {
-                    size: {type: String,},
+                    size: {type: String},
                     qty: {type: Number,default: 50}
                 }
             ], 
             imgSrc: [
-                {type: String}
-            ]
+                {
+                    imagId: String,
+                    imageUrl: String,
+                }
+            ],
+            rating: Number,
         }
     ]
 }, {

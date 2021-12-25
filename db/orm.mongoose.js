@@ -43,9 +43,26 @@ async function getProductDetail( id ){
     })
     return getProductDetail
 }
+async function addProductMainImg( imageObj, productId ){
 
+    console.log('in orm',imageObj)
+    const addProductImg = await db.products.findOneAndUpdate(
+        { _id: productId}, { "$set": imageObj}
+    );
+    return { message: `Thank you, updated` }
+}
+async function addColorObj( colorObj, productId ){
+
+    console.log('in orm',colorObj)
+    const addColorObj = await db.products.findOneAndUpdate(
+        { _id: productId}, { "$push": {colours: colorObj}}
+    );
+    return { message: `Thank you, updated` }
+}
 module.exports = {
     postNewProduct,
     getAllProducts,
-    getProductDetail
+    getProductDetail,
+    addProductMainImg,
+    addColorObj
 }

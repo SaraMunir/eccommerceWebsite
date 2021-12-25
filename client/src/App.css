@@ -28,3 +28,8 @@ li {
 .justifyCntSpcEven{
     justify-content: space-evenly;
 }
+.alert{
+    padding: 10px;
+    background: #cb997e;
+    border-radius: 3px;
+}
